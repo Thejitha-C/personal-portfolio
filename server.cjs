@@ -75,7 +75,7 @@ ${historyContext}
 Current User Question: ${message}`;
       }
       const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash",
+        model: "gemini-1.5-flash",
         contents: promptText,
         config: {
           systemInstruction,
