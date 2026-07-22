@@ -47,7 +47,7 @@ async function startServer() {
       const apiKey = process.env.GEMINI_API_KEY;
       if (!apiKey) {
         res.status(200).json({
-          reply: "I am currently in preview offline mode because GEMINI_API_KEY is missing. Feel free to contact Thejitha directly at thejithadev@gmail.com or via LinkedIn!"
+          reply: "I am currently in preview offline mode because GEMINI_API_KEY is missing. Feel free to contact Thejitha directly at chanupathi30@gmail.com or via LinkedIn!"
         });
         return;
       }
@@ -58,9 +58,9 @@ Key details about Thejitha Chanupathi:
 - Role: Full-Stack Developer & Creative 3D Web Architect
 - Specialties: React, Next.js, Three.js, WebGL, TypeScript, Tailwind CSS, Node.js, Express, Gemini API integrations, 3D Canvas rendering, performance tuning.
 - Portfolio URL: https://thejitha-c.github.io/personal-portfolio/
-- Email: thejithadev@gmail.com
+- Email: chanupathi30@gmail.com
 - GitHub: https://github.com/thejitha-c
-- LinkedIn: https://linkedin.com/in/thejitha-c
+- LinkedIn: www.linkedin.com/in/thejitha-chanupathi
 - Experience: 3+ years in software engineering, built 25+ web apps, 10+ high-impact 3D WebGL experiences.
 - Availability: Open to full-time remote roles, contract development, 3D web experience projects, and technical consultation.
 - Communication Style: Friendly, concise, enthusiastic about tech, 3D graphics, and high-performance clean code.
@@ -75,7 +75,7 @@ ${historyContext}
 Current User Question: ${message}`;
       }
       const response = await ai.models.generateContent({
-        model: "gemini-1.5-flash",
+        model: "gemini-3.6-flash",
         contents: promptText,
         config: {
           systemInstruction,
@@ -87,7 +87,7 @@ Current User Question: ${message}`;
     } catch (err) {
       console.error("Gemini API Error:", err);
       res.status(500).json({
-        reply: "I encountered a temporary connection glitch. Feel free to reach out to Thejitha directly at thejithadev@gmail.com!"
+        reply: "I encountered a temporary connection glitch. Feel free to reach out to Thejitha directly at chanupathi30@gmail.com!"
       });
     }
   });
