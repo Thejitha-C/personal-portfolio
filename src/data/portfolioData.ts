@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
       "Custom CSS animations and interactive product showcase",
       "Search engine optimization (SEO) & Analytics tracking"
     ],
-    liveUrl: "https://eteonsolutions.lk",
+    liveUrl: "https://eteon.lk",
     featured: true
   },
   {
